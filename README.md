@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tres en Raya - Shakers
 
-## Getting Started
+## Descripción
 
-First, run the development server:
+Este proyecto es una implementación del clásico juego de Tres en Raya, también conocido como Tic-Tac-Toe, desarrollado con **Next.js**. La aplicación permite jugar en este caso contra una máquina. Además, incluye una página de ranking donde se visualizan las victorias, empates y derrotas de los jugadores.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ¿Por qué Next.js?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Se ha elegido **Next.js** debido a su robustez, facilidad de uso y características que permiten desarrollar aplicaciones de una sola página (SPA) con renderizado del lado del servidor (SSR) y generación de sitios estáticos (SSG). Esto asegura una experiencia de usuario rápida y fluida, especialmente cuando se interactúa con APIs externas, como en este caso, con la base de datos en MongoDB Atlas.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Dependencias
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **mongodb**: Esta dependencia ha sido utilizada para establecer la conexión con la base de datos en MongoDB Atlas. Gracias a ella, el proyecto puede interactuar de manera eficiente con la base de datos para almacenar y recuperar información sobre las partidas y los rankings de los jugadores. La conexión a la base de datos se realiza a través del archivo `mongodb.js`.
+- **tailwindcss**: Se ha utilizado **TailwindCSS** como framework de CSS, debido a su sencillez y flexibilidad. Permite crear un diseño atractivo y responsive rápidamente, algo esencial para garantizar que la página sea accesible y funcione correctamente en diferentes tamaños de pantalla.
 
-## Learn More
+## Configuración
 
-To learn more about Next.js, take a look at the following resources:
+Para poder interactuar con la base de datos, es necesario configurar una variable de entorno. Asegúrate de crear un archivo `.env` en la raíz del proyecto y añadir la siguiente variable de entorno:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`MONGODB_URI=mongodb+srv://juliofernz1505:vzkrgvRKgeSEaZTT@clustertresenraya.lip15.mongodb.net/?retryWrites=true&w=majority&appName=clusterTresEnRaya`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Esto permitirá que el proyecto se conecte a la base de datos MongoDB en la nube.
 
-## Deploy on Vercel
+## Cómo ejecutar el proyecto
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clona el repositorio:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   git clone https://github.com/jferpic/tres-en-raya-shakers.git
+
+   ```
+
+2. Instala las dependencias:
+
+   ```bash
+   npm install
+
+   ```
+
+3. Crea el archivo `.env` en la raíz del proyecto y agrega tu `MONGODB_URI`:
+
+   ```bash
+   git clone https://github.com/jferpic/tres-en-raya-shakers.git
+
+   ```
+
+4. Ejecuta el proyecto en desarrollo:
+
+   ```bash
+   npm run dev
+
+   ```
+
+5. Abre el navegador y visita [http://localhost:3000](http://localhost:3000)
