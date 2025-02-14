@@ -15,7 +15,7 @@ Se ha elegido **Next.js** debido a su robustez, facilidad de uso y característi
 
 ## Configuración
 
-Para poder interactuar con la base de datos, es necesario configurar una variable de entorno. Asegúrate de crear un archivo `.env` en la raíz del proyecto y añadir la siguiente variable de entorno:
+Para poder interactuar con la base de datos, es necesario configurar una variable de entorno. Asegúrate de crear un archivo `.env` en la raíz del proyecto y añadir la siguiente variable de entorno: (Sé que en un proyecto real no se debe poner nunca una variable de entorno con un usuario y una contraseña visibles, pero quería facilitar el acceso a todo el mundo en este caso)
 
 `MONGODB_URI=mongodb+srv://juliofernz1505:vzkrgvRKgeSEaZTT@clustertresenraya.lip15.mongodb.net/?retryWrites=true&w=majority&appName=clusterTresEnRaya`
 
