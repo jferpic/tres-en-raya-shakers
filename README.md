@@ -37,12 +37,8 @@ Esto permitirá que el proyecto se conecte a la base de datos MongoDB en la nube
 
    ```
 
-3. Crea el archivo `.env` en la raíz del proyecto y agrega tu `MONGODB_URI`:
+3. Crea el archivo `.env` en la raíz del proyecto y agrega la `MONGODB_URI`:
 
-   ```bash
-   git clone https://github.com/jferpic/tres-en-raya-shakers.git
-
-   ```
 
 4. Ejecuta el proyecto en desarrollo:
 
