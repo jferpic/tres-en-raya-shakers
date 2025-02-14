@@ -48,3 +48,10 @@ Esto permitirá que el proyecto se conecte a la base de datos MongoDB en la nube
    ```
 
 5. Abre el navegador y visita [http://localhost:3000](http://localhost:3000)
+
+
+## NOTA
+
+En el sistema de archivos de este proyecto se puede observar que la carpeta `/components` ha sido ubicada dentro de la carpeta `/app`. El **file-system based router** de Next.JS utiliza la distribución de los distintos archivos `page.js` presentes en `/app` para definir el enrutamiento del proyecto web. Por tanto, incluir la carpeta `/components` dentro de esta puede llegar a ser entendido como una mala práctica. 
+
+En el ámbito de este proyecto, cuya estructura de archivos es sencilla, se decide **NO SACAR** la carpeta `/components` fuera de `/app` puesto que en `/components` no existe ningún archivo `page.js` que de a entender a Next.JS que se trata de una nueva ruta en el proyecto. Aún así, se decide tener en cuenta la buena práctica de manetenerlo fuera de cara a la escalabilidad de este proyecto y proyectos futuros
